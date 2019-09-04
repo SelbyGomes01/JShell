@@ -1,0 +1,67 @@
+mkdir directory
+Create	directories, each of which may be relative to the current directory or 
+may be a full path.
+/# mkdir Assignment
+/# mkdir /Users/Mickael/documents/lessons/csc207
+
+
+cd DIR
+Change directory to DIR, which may be relative to the current directory or may 
+be a full path.
+ /#cd documents
+ /#cd
+ /#cd /Users/Mickael/documents/lessons/csc207
+ /#cd..
+ /#cd.
+
+ 
+ 
+pwd
+Print the current working directory path
+/#pwd
+/Users/Mickael/documents/lessons/csc207
+
+
+ls[PATH…]
+Prints the contents of the current directory if PATH is not given. If it is
+given, prints the contents of the directory in that path.
+/#ls
+Applications	Downloads	Music
+Desktop			Library
+Documents		Music
+/#ls /users/Mickael/documents/lessons/2ndyear
+csc207	eco200	sta256
+csc236	ec0202
+
+
+pushd DIR
+Saves the current directory onto a stack and then changes the current 
+directory to DIR
+
+
+popd
+Changes the current directory to the first directory on the stack.
+
+
+history [number]	
+Prints out recent commands. If number n given, it will show the last n commands.
+
+
+
+cat	FILE
+Display the contents of FILE in the shell.	
+
+
+echo STRING [> OUTFILE] / echo STRING [>> OUTFILE]
+If OUTFILE is not provided, print STRING on the shell otherwise, 
+put STRING into file OUTFILE. > creates a new file if OUTFILE does not exists 
+and erases the old contents if OUTFILE already exists. >> appends the STRING in 
+OUTFILE and keeps the old content.
+/#"echo 'cat'"
+cat
+echo 'cat' > animals
+echo 'fish' > animals
+echo 'zebra' >> animals
+
+man	CMD
+Print documentation for CMD
